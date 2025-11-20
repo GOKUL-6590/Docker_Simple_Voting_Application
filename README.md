@@ -14,3 +14,30 @@ Worker (Processes votes)
 Redis (In-memory queue)
 
 PostgreSQL (Database)
+
+
+
+## Folder structure
+
+docker-voting-app/
+│
+├── docker-compose.yml
+├── vote/
+│   ├── Dockerfile
+│   ├── app.py
+│   ├── requirements.txt
+│   └── templates/
+│       └── index.html
+│
+├── worker/
+│   ├── Dockerfile
+│   ├── worker.py
+│   └── requirements.txt
+│
+└── result/
+    ├── Dockerfile
+    ├── app.py
+    ├── requirements.txt
+    └── templates/
+        └── results.html
+
